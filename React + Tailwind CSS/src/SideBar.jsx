@@ -1,4 +1,4 @@
-export default function SideBar() {
+function SideBar() {
   return (
     <div className="fixed top-0 left-0 flex flex-col h-screen m-0 text-white shadow-lg bg-zinc-900 w-16">
       <SidebarIcon
@@ -44,3 +44,5 @@ export default function SideBar() {
 function SidebarIcon({ icon }) {
   return <div className="sidebar-icon">{icon}</div>;
 }
+
+export default SideBar;
