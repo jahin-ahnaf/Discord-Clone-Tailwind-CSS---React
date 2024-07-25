@@ -9,7 +9,18 @@
     <style type="text/tailwindcss">
       @layer components {
         .sidebar-icon {
-          @apply text-green-600 relative flex justify-center items-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-zinc-800;
+          @apply text-green-600 
+          relative flex justify-center 
+          items-center h-12 w-12 mt-2 
+          mb-2 mx-auto shadow-lg 
+          bg-zinc-800 
+          hover:text-white 
+          hover:bg-green-600 
+          cursor-pointer rounded-3xl hover:rounded-xl
+          duration-300;
+        }
+        .sidebar-text{
+          @apply absolute min-w-32 bg-zinc-800 ml-56 p-2 text-white text-center font-bold text-sm rounded-md;
         }
       }
     </style>
